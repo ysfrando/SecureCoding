@@ -1,10 +1,8 @@
 """
-WHY IS THIS APP SECURE?
-Escape Function: The escape function from markupsafe is used to sanitize user comments before rendering them, preventing the execution of any embedded JavaScript or HTML.
-Safe Rendering: Comments are rendered without the |safe filter, ensuring that any HTML tags are displayed as plain text.
+WHY IS THIS APP SECURE:
+● Escape Function: The escape function from markupsafe is used to sanitize user comments before rendering them, preventing the execution of any embedded JavaScript or HTML.
+● Safe Rendering: Comments are rendered without the |safe filter, ensuring that any HTML tags are displayed as plain text.
 """
-
-
 
 from flask import Flask, request, render_template_string
 from markupsafe import escape
